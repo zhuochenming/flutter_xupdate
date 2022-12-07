@@ -1,26 +1,5 @@
 # flutter_xupdate
 
-[![Version](https://img.shields.io/badge/version-2.0.3-blue.svg)](https://pub.dev/packages/flutter_xupdate)
-[![Build Status](https://travis-ci.org/xuexiangjys/flutter_xupdate.svg?branch=master)](https://travis-ci.org/xuexiangjys/flutter_xupdate)
-[![Issue](https://img.shields.io/github/issues/xuexiangjys/flutter_xupdate.svg)](https://github.com/xuexiangjys/flutter_xupdate/issues)
-[![Star](https://img.shields.io/github/stars/xuexiangjys/flutter_xupdate.svg)](https://github.com/xuexiangjys/flutter_xupdate)
-
-A Flutter plugin for [XUpdate](https://github.com/xuexiangjys/XUpdate) -- Android Update Library。See the use [Chinese Document](https://github.com/xuexiangjys/flutter_xupdate/wiki) for details。
-
-## About me
-
-| WeChat public number   | juejin     |  zhihu    |  CSDN   |   jianshu   |   segmentfault  |   bilibili  |   toutiao
-|---------|---------|--------- |---------|---------|---------|---------|---------|
-| [我的Android开源之旅](https://t.1yb.co/Irse)  |  [Click me](https://juejin.im/user/598feef55188257d592e56ed/posts)    |   [Click me](https://www.zhihu.com/people/xuexiangjys/posts)       |   [Click me](https://xuexiangjys.blog.csdn.net/)  |   [Click me](https://www.jianshu.com/u/6bf605575337)  |   [Click me](https://segmentfault.com/u/xuexiangjys)  |   [Click me](https://space.bilibili.com/483850585)  |   [Click me](https://img.rruu.net/image/5ff34ff7b02dd)
-
-## Video tutorial
-
-[How to use flutter_xupdate](https://www.bilibili.com/video/BV1YK4y1S73e)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/xuexiangjys/flutter_xupdate.svg)](https://starchart.cc/xuexiangjys/flutter_xupdate)
-
 ## Getting Started
 
 You should ensure that you add the `flutter_xupdate` as a dependency in your flutter project.
@@ -199,39 +178,3 @@ void customPromptDialog() {
 
 ![](./example/art/7.png)
 
-## Property value
-
-### Initialization
-
-Name | Type | Default | Description
-:-|:-:|:-:|:-
-debug | bool | false | Whether Output log
-isPost | bool | false | Whether use post request
-isPostJson | bool | false | Whether post request upload json format
-timeout | int | 20000(ms) | Request response timeout
-isWifiOnly | bool | true | Whether update only under WiFi
-isAutoMode | bool | false | Whether to turn on automatic mode
-supportSilentInstall | bool | false | Whether to support silent installation requires that the device has root permission
-enableRetry | bool | false | In the process of downloading, if you click Cancel, whether the pop-up window for retrying to switch the download mode will pop up
-retryContent | String | '' | Try the prompt content of the prompt pop-up window again
-retryUrl | String | '' | Retrying prompt pop-up URL to jump after clicking
-params | Map | / | Public parameters to be set
-
-### CheckUpdate
-
-Name | Type | Default | Description
-:-|:-:|:-:|:-
-url | String | / | URL of version check
-params | Map | / | Parameters
-supportBackgroundUpdate | bool | false | Whether to support background updates
-isAutoMode | bool | false | Whether to turn on automatic mode
-isCustomParse | bool | false | Is it a custom resolution protocol
-themeColor | String | '' | Apply pop-up theme color
-topImageRes | String | '' | The name of the top picture resource in the pop-up window
-buttonTextColor | String | '' | The color of the button text
-widthRatio | double | / | Proportion of version update Prompter width to screen
-heightRatio | double | / | Proportion of version update Prompter height to screen
-overrideGlobalRetryStrategy | bool | false | Whether to override the global retry policy
-enableRetry | bool | false | In the process of downloading, if you click Cancel, whether the pop-up window for retrying to switch the download mode will pop up
-retryContent | String | '' | Try the prompt content of the prompt pop-up window again
-retryUrl | String | '' | Retrying prompt pop-up URL to jump after clicking
